@@ -285,6 +285,228 @@
             </div>
         </main>
     </div>
+<footer class="poster-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- Research Links Section -->
+            <div class="footer-section">
+                <h4 class="footer-title">🔗 Project Links</h4>
+                <div class="footer-links">
+                    <a href="https://mustdhiya-io.vercel.app/" target="_blank" class="footer-link portfolio">
+                        <i class="fas fa-globe"></i>
+                        <span>Portfolio & Documentation</span>
+                    </a>
+                    <a href="https://www.umkt.ac.id/prodi-teknik-informatika/" target="_blank" class="footer-link academic">
+                        <i class="fas fa-university"></i>
+                        <span>UMKT Teknik Informatika</span>
+                    </a>
+                    <a href="https://www.instagram.com/mustdhiya_tech/" target="_blank" class="footer-link social">
+                        <i class="fab fa-instagram"></i>
+                        <span>@mustdhiya_tech</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- QR Code Integration -->
+            <div class="footer-section qr-section">
+                <div class="qr-container">
+                    <div class="qr-placeholder">
+                        [QR CODE]
+                    </div>
+                    <p class="qr-text">Scan for Complete Research Paper & Demo</p>
+                </div>
+            </div>
+
+            <!-- Research Info -->
+            <div class="footer-section research-info">
+                <h4 class="footer-title">📚 Research Details</h4>
+                <p class="research-text">
+                    <strong>ESP8266 IoT Aquarium Control</strong><br>
+                    Sinta Journal Publication<br>
+                    <em>Automatic Aerator Control System</em>
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">#ESP8266</span>
+                    <span class="tag">#IoT</span>
+                    <span class="tag">#Blynk</span>
+                    <span class="tag">#Automation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mustdhiya Tech | Program Studi Teknik Informatika UMKT | IoT Research Innovation</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+.poster-footer {
+    background: linear-gradient(135deg, #1E3A8A 0%, #0D9488 100%);
+    color: white;
+    padding: 30px 20px 15px;
+    margin-top: 40px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #F0F9FF;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer-link:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.footer-link.portfolio {
+    background: linear-gradient(45deg, #3B82F6, #1E40AF);
+}
+
+.footer-link.academic {
+    background: linear-gradient(45deg, #059669, #047857);
+}
+
+.footer-link.social {
+    background: linear-gradient(45deg, #E1306C, #C13584);
+}
+
+.qr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.qr-placeholder {
+    width: 120px;
+    height: 120px;
+    background: #f0f0f0;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.qr-text {
+    font-size: 12px;
+    color: #1E3A8A;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.research-info {
+    text-align: center;
+}
+
+.research-text {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tag {
+    background: rgba(255,255,255,0.2);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 25px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-link {
+        flex: 1;
+        min-width: 140px;
+    }
+}
+
+/* Font Awesome Icons (tambahkan di head) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+</style>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="app.js"></script>
